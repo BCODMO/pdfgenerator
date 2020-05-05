@@ -1,0 +1,9 @@
+version: '2'
+services:
+    pdf:
+      image: bcodmo/pdfgenerator:latest
+      container_name: pdfgenerator
+      ports:
+        - "8080:5001"
+      volumes:
+        - ./app.py:/app/app.py
